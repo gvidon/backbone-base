@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Backbone Base example</title>
+	</head>
+	
+	<body>
+		<table id="persons-list">
+			<th><tr>
+				<td>First name</td>
+				<td>Last name</td>
+				<td>Title</td>
+			</tr></th>
+			
+			<tbody data-id="list-container"></tbody>
+		</table>
+		
+		<script src="components/underscore/underscore-min.js"></script>
+		<script src="components/jquery/dist/jquery.min.js"></script>
+		<script src="components/backbone/backbone.js"></script>
+		<script src="components/handlebars/handlebars.min.js"></script>
+		<script src="base.js"></script>
+
+		<script>
+			(new Backbone.BaseListView({
+				container: '[data-id=list-container]',
+				el: document.getElementById('persons-list'),
+
+				ItemView: Backbone.BaseView.extend({
+					render: function() { this.$el.html(this.template(this.model.toJSON())); return this },
+					tagName: 'tr',
+					template: Handlebars.compile('<td>{{ firstName }}</td><td>{{ lastName }}</td><td>{{ title }}</td>')
+				})
+			})).reset(new Backbone.Collection([
+				{firstName: 'Angela', lastName: 'Davis', title: 'Ms'},
+				{firstName: 'John', lastName: 'Smith', title: 'Mr'},
+				{firstName: 'Ivan', lastName: 'Sidorov', title: 'Mr'}
+			]))
+		</script>
+	</body>
+</html>
