@@ -1,5 +1,5 @@
 #backbone-base
-Set of objects for creating medium and large scale web applications with backbone.js.
+Set of objects for creating medium and large scale web applications with ```backbone.js```.
 
 ###Introduction
 We have been using ```backbone.js``` for about 3 years now and we like it. It is
@@ -8,7 +8,7 @@ dictate you how to organize application structure, it is aimed to provide you wi
 basic tools like views, models and urls dispatcher. So you have more choices when
 it comes to application structure and design.
 
-Our long time experience with backbone.js resulted in an application design approach
+Our long time experience with ```backbone.js``` resulted in an application design approach
 and base objects I'd like to share with everyone.
 
 ###Views hierarchy — BaseView
