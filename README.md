@@ -1,3 +1,4 @@
+#backbone-base
 We have been using ```backbone.js``` for about 3 years now and we like it. It is
 not a framework but complete and solid base for frontend application. It doesn't
 dictate you how to organize application structure, it is aimed to provide you with
@@ -7,8 +8,7 @@ it comes to application structure and design.
 Our long time experience with backbone.js resulted in an application design approach
 and base objects I'd like to share with everyone.
 
-Views hierarchy — BaseView
---------------------------
+###Views hierarchy — BaseView
 By *view* I actually mean object derived from ```Backbone.View``` which is responsible
 for visual representation. In our applications any view can access any other view
 without using global varibales. We achieved this with views hierarchy — placing all
@@ -70,8 +70,7 @@ Any view derived from ```BaseView``` can be initialized like this:
 new InboxView({app: this.app, parent: this})
 ```
 
-Lists — BaseListView
---------------------
+###Lists — BaseListView
 Lists are very common for web applications. Certain features may vary but most
 list views essentially do the same — iterate over array of initial data and place
 items into the list.
@@ -105,8 +104,7 @@ var PersonsView = BaseListView.extend({
 })
 ```
 
-More views
-----------
+###More views
 These two types of views provide us with an extensible base. So we have solid and simple
 hierarchy for any application and we have customizable view for most typical
 operation on the web — representing data.
