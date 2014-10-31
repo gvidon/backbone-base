@@ -85,8 +85,8 @@ we will also put view of each item into array called ```.layout.items```.
 
 This way instead of going with events handlers one may use ```.layout.items``` for such things:
 ```javascript
-// Unselect list item siblings. We are crazy about underscore.js
-_.invoke(this.parent.layout.items, 'select', true)
+// Called from list item view this will unselect all siblings. We are crazy about underscore.js
+_.invoke(this.parent.layout.items, 'select', false)
 ```
 
 We have divided list generation process into reasonable number of steps so that derived
