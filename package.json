@@ -1,0 +1,21 @@
+{
+  "name": "backbone-base",
+  "version": "0.0.1",
+  "description": "Set of objects for creating medium and large scale web applications with backbone.js.",
+  "main": "base.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvidon/backbone-base"
+  },
+  "keywords": [
+    "backbone",
+    "view",
+    "framework"
+  ],
+  "author": "Artem Rudenko <gvidon@ottofeller.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvidon/backbone-base/issues"
+  },
+  "homepage": "https://github.com/gvidon/backbone-base"
+}
