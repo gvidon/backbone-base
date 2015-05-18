@@ -1,6 +1,6 @@
 {
   "name": "backbone-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Set of objects for creating medium and large scale web applications with backbone.js.",
   "main": "base.js",
   "repository": {

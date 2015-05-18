@@ -12,11 +12,14 @@
 	Backbone.BaseView = Backbone.View.extend({
 		// Make node visible when activating view
 		activate: function(state) {
-			this.$el.prop('hidden', !state);
+			var
+				isActivation = state || _.isUndefined(state);
+
+			this.$el.prop('hidden', !isActivation);
 
 			// Enable events handlers when View is active
 			this.undelegateEvents();
-			state && this.delegateEvents(this.events);
+			isActivation && this.delegateEvents(this.events);
 
 			return this;
 		},
