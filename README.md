@@ -1,6 +1,8 @@
 #backbone-base
 Set of objects for creating medium and large scale web applications with ```backbone.js```.
 
+###Installation
+
 ###Introduction
 We have been using ```backbone.js``` for about 3 years now and we like it. It is
 not a framework but complete and solid base for frontend application. It doesn't
