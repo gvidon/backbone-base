@@ -1,4 +1,6 @@
 #backbone-base
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/gvidon/backbone-base.svg)](https://greenkeeper.io/)
 Set of objects for creating medium and large scale web applications with ```backbone.js```.
 
 ###Installation
